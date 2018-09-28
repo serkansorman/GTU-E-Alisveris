@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.grup15.gtuticaret">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/logoo"
+        android:label="GTÜ E-Alışveriş"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/logoo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProductList" />
+        <activity android:name=".Categories" />
+        <activity android:name=".ProductScreen" />
+        <activity android:name=".CommentsPage" />
+        <activity android:name=".MyAccount" />
+        <activity android:name=".Cart" />
+        <activity android:name=".AddProduct" />
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/Giris" />
+        <activity
+            android:name=".SignIn"
+            android:theme="@style/Giris" />
+        <activity android:name=".MainScreen" />
+        <activity android:name=".Chat" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Search" />
+        <activity android:name=".Inbox"></activity>
+    </application>
+
+</manifest>
